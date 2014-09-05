@@ -11,12 +11,13 @@ $color-3:#C5A967;
 $color-4:linear-gradient(to bottom, #ad0002 1%,#6d0001 100%);
 $color-5:linear-gradient(to bottom, #f2861a 0%,#c46200 99%);
 $color-6:#7A02D8;
+$color-7:linear-gradient(to bottom, #3d0000 50%,#931302 100%);
 $shadow-1:0 1px 2px rgba(0, 0, 0, 0.21);
 
 a {color:$color-1;}
 a:hover {color:$color-6;}
 .content {
-  font-size:20px;
+  font-size:18px;
 }
 
 
@@ -35,9 +36,9 @@ html {
   float:left;
   width: 80%;
   max-width:1000px;
-  padding:50px 50px ;
+  padding:0px 50px ;
   @media (max-width: 70em) {
-    padding:20px;
+    padding:0 20px;
     margin-left:200px;
     width:800px;
   }
@@ -51,7 +52,7 @@ html {
 }
 
 .content-int {
-  padding:20px;
+  padding:100px 20px;
   background:rgba(0,0,0,.5)
 }
 
@@ -167,15 +168,14 @@ nav
   }
 
 .nav ul li:hover > ul.sub-menu {
- background:url('../img/side_menu_bg.jpg');
-  background-size:cover;
+background:$color-7;
+
 display: block;
 z-index: 99;
 position: absolute;
 top: 0px;
 right: -200px;
 padding: 0px;
-background-color: #fff;
 width: 200px;
 }
 
@@ -195,7 +195,7 @@ banner
 }
 
 .wdgt-side-b {
-  width:90%;
+  width:80%;
   position:absolute;
   bottom:0;
 }
@@ -243,7 +243,6 @@ footer {
   text-align:center;
   color: $grey-1;
   font-size: 12px;
-
   a {
     color: $grey-1;
   }
@@ -324,10 +323,21 @@ footer {
   margin-top: -1.5em;
 }
 
+input:nth-child(1) {
+  background: url('../img/background-bloody.png') !important;
+  background-size:100%;
+}
+
+.ws-form textarea {
+  background: url('../img/background-bloody.png') white;
+  background-size:100%;
+}
+
+
 input, textarea {
   /* Use for styling text based form elements, like name, email, password. 
   Button/submit specific styles below, those will override */
-  box-shadow: inset 0px 1px 5px 1px rgba(0, 0, 0, 0.4);
+  box-shadow: inset 0px 1px 5px 1px rgba(0, 0, 0, 0.7);
   
   display: block;
   padding: .5em;
@@ -344,6 +354,7 @@ input, textarea {
   transition: all .3s ease;
   resize: none;
 }
+
 
 input:focus, textarea:focus {
   outline: none;
