@@ -1,18 +1,17 @@
 a {
-  color: #A10003; }
+  color: #C00509; }
 
 a:hover {
-  color: #7A00BD; }
+  color: #7A02D8; }
 
-p {
-  font-size: 22px; }
+.content {
+  font-size: 20px; }
 
 html {
   font-family: "Times New Roman", Times, serif;
   color: lightgrey;
-  postition: relative;
-  background: url('../img/calendar-slide1.jpg') no-repeat 60% center fixed;
-  background-position: cover; }
+  position: relative;
+  background: url('../img/calendar-slide1.jpg') no-repeat 60% center fixed; }
   @media (max-width: 45em) { }
 
 .content {
@@ -130,7 +129,7 @@ nav
   width: 200px; }
 
 .current_page_item a {
-  color: #A10003 !important;
+  color: #C00509 !important;
   background: black; }
 
 /*=============================================================
@@ -141,6 +140,18 @@ banner
   background: url('./img/bkg-1.jpg');
   background-size: cover; }
 
+.wdgt-side-b {
+  width: 90%;
+  position: absolute;
+  bottom: 0; }
+
+a.buy-tickets {
+  position: relative;
+  top: 70px; }
+
+a.buy-tickets:hover {
+  top: 0; }
+
 /* ===============================================================
 footer items
 =================================================================== */
@@ -149,6 +160,13 @@ footer items
   background: black;
   border-bottom: solid 2px #820003;
   color: white; }
+
+.sponsors {
+  width: 960px; }
+  @media (max-width: 45em) {
+    .sponsors {
+      width: 90%;
+      margin: auto; } }
 
 /*=============================================================== 
 footer 
@@ -168,7 +186,7 @@ footer {
     footer {
       position: relative;
       width: 100%;
-      padding: 0;
+      padding: 10px 0;
       margin-left: 0; } }
 
 /* ==========================================================================
@@ -178,13 +196,13 @@ footer {
   height: 5em; }
 
 .color-1 {
-  background: #A10003; }
+  background: #C00509; }
 
 .color-2 {
   background: #E57100; }
 
 .color-3 {
-  background: #43B400; }
+  background: #C5A967; }
 
 .color-4 {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #ad0002), to(#6d0001));
@@ -197,13 +215,13 @@ footer {
   background: linear-gradient(to bottom, #f2861a 0%, #c46200 99%); }
 
 .color-6 {
-  background: #7A00BD; }
+  background: #7A02D8; }
 
 /* ===========================================================================
   typography
   =========================================================================== */
 .headline-1 {
-  color: #A10003;
+  color: #C00509;
   text-transform: uppercase;
   display: block;
   font-family: 'Love Ya Like A Sister', serif;
@@ -248,7 +266,7 @@ input, textarea {
 
 input:focus, textarea:focus {
   outline: none;
-  border-color: #A10003; }
+  border-color: #C00509; }
 
 input[type='button'], input[type='submit'], button, .button {
   border: none;
@@ -266,6 +284,7 @@ input[type='button'], input[type='submit'], button, .button {
           box-shadow: none; }
 
 .btn-1 {
+  padding: 15px 20px;
   border-bottom: solid 2px #4F0001;
   border-radius: 8px;
   text-transform: uppercase;
@@ -273,12 +292,15 @@ input[type='button'], input[type='submit'], button, .button {
   color: black;
   font-family: 'Love Ya Like A Sister', serif;
   font-size: 18px;
-  background: #E57100; }
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #ad0002), to(#6d0001));
+  background: -webkit-linear-gradient(top, #ad0002 1%, #6d0001 100%);
+  background: linear-gradient(to bottom, #ad0002 1%, #6d0001 100%); }
 
 .form-btn-1:hover, .btn-1:hover {
-  color: #7A00BD; }
+  color: #7A02D8; }
 
 .form-btn-1, .btn-2 {
+  padding: 15px 20px;
   border-bottom: solid 2px #4F0001;
   border-radius: 8px;
   text-transform: uppercase;
@@ -290,16 +312,21 @@ input[type='button'], input[type='submit'], button, .button {
   background: -webkit-linear-gradient(top, #f2861a 0%, #c46200 99%) !important;
   background: linear-gradient(to bottom, #f2861a 0%, #c46200 99%) !important; }
 
+.btn-2:hover {
+  color: #7A02D8; }
+
 .btn-3 {
-  color: #F2F2F2;
+  border-radius: 3px;
+  padding: 10px 20px;
+  color: black;
   font-size: 0.875em;
-  background: #4D0503; }
+  background: #C5A967; }
 
 .btn-3:hover {
-  background: #240503; }
+  background: #9D8650; }
 
 .btn-3:focus, .btn-3:active {
-  background: #240503; }
+  background: #9D8650; }
 
 /* ==========================================================================
    =ADJECTIVES

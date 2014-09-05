@@ -234,38 +234,39 @@ function add_slug_to_body_class($classes)
 // If Dynamic Sidebar Exists
 if (function_exists('register_sidebar'))
 {
-    // Define Sidebar Top Left
+    // Define Sidebar Top of Sidebar Navigation
     register_sidebar(array(
         'name' => __('Side Nav Top', 'Area for business info etc'),
         'description' => __('Area for business info etc', 'html5blank'),
         'id' => 'side-nav-t',
-        'before_widget' => '<div id="%1$s" class="%2$s top-wdgt-l">',
+        'before_widget' => '<div id="%1$s" class="%2$s wdgt-side-t">',
         'after_widget' => '</div>',
         'before_title' => '<h3 class="title-2">',
         'after_title' => '</h3>'
     ));
 
-    // Define Sidebar Top Right
+    // Define Sidebar Bottom of Sidebar Navigation
     register_sidebar(array(
         'name' => __('Side Nav bottom', 'Area for business info etc'),
         'description' => __('Area for business info etc', 'html5blank'),
         'id' => 'side-nav-b',
-        'before_widget' => '<div id="%1$s" class="%2$s top-wdgt-r">',
+        'before_widget' => '<div id="%1$s" class="%2$s wdgt-side-b">',
         'after_widget' => '</div>',
         'before_title' => '<h3>',
         'after_title' => '</h3>'
     ));
 
-      // Define Sidebar Sidebar-1
+      // Define Sidebar Mobile
     register_sidebar(array(
         'name' => __('Mobile', 'Area for Sidebar, feeds posts etc'),
         'description' => __('Area for Sidebar, feeds posts etc', 'html5blank'),
         'id' => 'mobile',
-        'before_widget' => '<div id="%1$s" class="%2$s sidebar-1">',
+        'before_widget' => '<div id="%1$s" class="%2$s wdgt-mobile">',
         'after_widget' => '</div>',
         'before_title' => '<h3>',
         'after_title' => '</h3>'
     ));
+
 
       // Define Sidebar Footer Items
     register_sidebar(array(

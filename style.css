@@ -77,6 +77,8 @@ img {display:block;vertical-align:bottom;}
 .pad-s-5px {padding-right:5px;padding-left:5px;}
 .pad-s-10px {padding-right:10px;padding-left:10px;}
 .pad-s-20px {padding-right:20px;padding-left:20px;}
+.pad-s-30px {padding-right:30px;padding-left:30px;}
+.pad-s-40px {padding-right:40px;padding-left:40px;}
 .pad-s-50px {padding-right:50px;padding-left:50px;}
 .pad-t-5px {padding-top:5px;}
 .pad-t-10px {padding-top:10px;}
@@ -202,6 +204,12 @@ img {display:block;vertical-align:bottom;}
   .m-pad-0 {padding:0;}
   .m-pad-5px {padding:5px;}
   .m-pad-10px {padding:10px;}
+  .m-pad-20px {padding:20px;}
+  .m-pad-30px {padding:30px;}
+  .m-pad-40px {padding:40px;}
+  .m-pad-50px {padding:50px;}
+  .m-pad-60px {padding:60px;}
+  .m-pad-70px {padding:70px;}
   .m-pad-r-0 {padding-right:0x;}
   .m-pad-l-0 {padding-left:0;}
   .m-pad-r-10px {padding-right:10px;}
