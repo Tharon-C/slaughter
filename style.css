@@ -1,10 +1,10 @@
 /*
-	Theme Name: Side Navigation Template
+	Theme Name: Slaughter House
 	Theme URI: 
-	Description: A template for fixed side navigation layouts
+	Description: A custom theme developed by TagLine.
 	Author: Tharon Carlson
-	Author URI: http://tharoncarlson.com
-	Tags: Starter, HTML5, CSS3
+	Author URI: http://taglinegroup.com
+	Tags: Marketing, Design, HTML5, CSS3
 
 	License: MIT
 	License URI: http://opensource.org/licenses/mit-license.php
@@ -16,7 +16,7 @@
 *:after,
 *:before {-moz-box-sizing:border-box;box-sizing:border-box;-webkit-font-smoothing:antialiased;font-smoothing:antialiased;text-rendering:optimizeLegibility;}
 html {font-size:62.5%;}
-body {font:400 14px 'Open Sans', 'Helvetica', sans-serif,'Arial';position:relative;}
+body {font:400 14px 'Times New Roman', 'Times', serif,'Arial';position:relative;}
 
 /* clear */
 .clear:before,
@@ -24,7 +24,7 @@ body {font:400 14px 'Open Sans', 'Helvetica', sans-serif,'Arial';position:relati
 .clear:after {clear:both;}
 .clear {*zoom:1;}
 
-a {color: darkgrey;text-decoration:none;}
+a {text-decoration:none;}
 a:hover {color:black;}
 a:focus {outline:0;}
 a:hover,a:active, input:hover {outline:0;transition: 420ms;}
@@ -48,6 +48,7 @@ article li {margin-bottom: 20px;}
 img {display:block;vertical-align:bottom;}
 
 /*helper classes*/
+.hide {display: none;}
 .flex {width:100%;}
 .inlineblk{display:inline-block;}
 .p-l {float:left;}

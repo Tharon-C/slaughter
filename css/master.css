@@ -1,5 +1,15 @@
+a {
+  color: #A10003; }
+
+a:hover {
+  color: #7A00BD; }
+
+p {
+  font-size: 22px; }
+
 html {
-  color: white;
+  font-family: "Times New Roman", Times, serif;
+  color: lightgrey;
   postition: relative;
   background: url('../img/calendar-slide1.jpg') no-repeat 60% center fixed;
   background-position: cover; }
@@ -10,7 +20,7 @@ html {
   float: left;
   width: 80%;
   max-width: 1000px;
-  padding: 100px 50px; }
+  padding: 50px 50px; }
   @media (max-width: 70em) {
     .content {
       padding: 20px;
@@ -34,15 +44,23 @@ header
   z-index: 10;
   width: 20%;
   min-width: 200px;
-  background: #8DABE7;
+  background: url('../img/side_menu_bg.jpg');
+  background-size: cover;
   position: fixed;
   top: 0;
   bottom: 0; }
 
+.mobile-header {
+  background: url('../img/side_menu_bg.jpg');
+  background-size: cover; }
+
+.mobile-wdgt {
+  padding: 20px; }
+
 /* business information across the top of header */
 .business-info {
-  background: #026596;
-  padding: 5px 10px; }
+  padding-top: 20px;
+  padding-left: 20px; }
   .business-info a {
     color: lightgrey; }
   .business-info .top-wdgt-l {
@@ -59,10 +77,10 @@ header
 logo
 ================================================================= */
 .logo {
-  width: 150px;
+  width: 100%;
   display: block;
   position: relative;
-  padding: 10px; }
+  margin-bottom: 20px; }
   .logo a:hover {
     color: black !important; }
 
@@ -82,37 +100,38 @@ nav
     width: 100%; }
   .nav li {
     position: relative;
-    display: block;
-    margin-left: -4px;
-    border-bottom: solid 1px white; }
+    display: block; }
     .nav li a {
       display: block;
       color: white;
-      padding: 18px 30px;
+      padding: 10px 30px;
+      font-family: 'Love Ya Like A Sister', serif;
       text-transform: uppercase;
-      font-size: 14px;
+      font-size: 22px;
       position: relative; }
   .nav a:hover {
-    background: #026596; }
+    background: black; }
   .nav ul.sub-menu {
     display: none; }
     .nav ul.sub-menu a {
       padding: 10px;
-      width: 300px; }
+      width: 200px; }
 
 .nav ul li:hover > ul.sub-menu {
+  background: url('../img/side_menu_bg.jpg');
+  background-size: cover;
   display: block;
   z-index: 99;
   position: absolute;
-  top: 30px;
-  margin: 0px 0px 0px -16px;
+  top: 0px;
+  right: -200px;
   padding: 0px;
-  border: 1px #808080 solid;
   background-color: #fff;
-  width: 300px; }
+  width: 200px; }
 
 .current_page_item a {
-  color: black; }
+  color: #A10003 !important;
+  background: black; }
 
 /*=============================================================
 banner
@@ -126,9 +145,10 @@ banner
 footer items
 =================================================================== */
 .footer-items {
-  background: #e5e5e5;
-  border-top: solid 1px #F2F2F2;
-  color: #525252; }
+  padding: 10px;
+  background: black;
+  border-bottom: solid 2px #820003;
+  color: white; }
 
 /*=============================================================== 
 footer 
@@ -138,7 +158,7 @@ footer {
   right: 0;
   position: fixed;
   bottom: 0;
-  background: #026596;
+  background: black;
   text-align: center;
   color: white;
   font-size: 12px; }
@@ -158,43 +178,50 @@ footer {
   height: 5em; }
 
 .color-1 {
-  background: #8DABE7; }
+  background: #A10003; }
 
 .color-2 {
-  background: #026596; }
+  background: #E57100; }
 
 .color-3 {
-  background: #e5e5e5; }
+  background: #43B400; }
 
 .color-4 {
-  background: #F7A710; }
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #ad0002), to(#6d0001));
+  background: -webkit-linear-gradient(top, #ad0002 1%, #6d0001 100%);
+  background: linear-gradient(to bottom, #ad0002 1%, #6d0001 100%); }
 
 .color-5 {
-  background: #9370E9; }
+  background: -webkit-gradient(linear, left top, left bottom, from(#f2861a), color-stop(99%, #c46200));
+  background: -webkit-linear-gradient(top, #f2861a 0%, #c46200 99%);
+  background: linear-gradient(to bottom, #f2861a 0%, #c46200 99%); }
 
 .color-6 {
-  background: #DDD5F8; }
+  background: #7A00BD; }
 
 /* ===========================================================================
   typography
   =========================================================================== */
 .headline-1 {
-  color: #026596;
+  color: #A10003;
+  text-transform: uppercase;
   display: block;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Love Ya Like A Sister', serif;
   font-weight: 700;
   font-size: 53px; }
 
 .title-1 {
+  text-transform: uppercase;
   display: block;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Permanent Marker', serif;
   font-weight: 400;
   font-size: 42px; }
 
 .title-2 {
+  text-transform: uppercase;
   display: block;
-  font: 'Open Sans', sans-serif;
-  font-weight: 700;
+  font-family: 'Permanent Marker', serif;
+  font-weight: 400;
   font-size: 22px; }
 
 /* ==========================================================================
@@ -206,10 +233,12 @@ footer {
 input, textarea {
   /* Use for styling text based form elements, like name, email, password. 
   Button/submit specific styles below, those will override */
+  -webkit-box-shadow: inset 0px 1px 5px 1px rgba(0, 0, 0, 0.4);
+          box-shadow: inset 0px 1px 5px 1px rgba(0, 0, 0, 0.4);
   display: block;
   padding: 0.5em;
   margin-bottom: 0.75em;
-  border: 0.1em solid lightgrey;
+  border: 0.1em solid #383838;
   width: 100%;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -219,14 +248,13 @@ input, textarea {
 
 input:focus, textarea:focus {
   outline: none;
-  border-color: #8DABE7; }
+  border-color: #A10003; }
 
 input[type='button'], input[type='submit'], button, .button {
   border: none;
-  background: transparent;
   line-height: 1;
   cursor: pointer;
-  padding: 1em 1.5em;
+  padding: 0.8em 1.5em;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   display: block;
@@ -234,38 +262,44 @@ input[type='button'], input[type='submit'], button, .button {
   margin-bottom: 0.75rem; }
 
 .form-btn-1 {
-  color: white;
-  background: #026596 !important; }
+  -webkit-box-shadow: none;
+          box-shadow: none; }
 
 .btn-1 {
-  color: white;
-  background: #026596; }
+  border-bottom: solid 2px #4F0001;
+  border-radius: 8px;
+  text-transform: uppercase;
+  text-shadow: 1px 1px #BD0003;
+  color: black;
+  font-family: 'Love Ya Like A Sister', serif;
+  font-size: 18px;
+  background: #E57100; }
 
-.btn-1:hover {
-  background: #026596; }
+.form-btn-1:hover, .btn-1:hover {
+  color: #7A00BD; }
 
-.btn-1:focus, .btn-1:active {
-  background: #026596; }
-
-.btn-2 {
-  color: white;
-  background: #F7A710; }
-
-.btn-2:hover {
-  background: #F7A710; }
-
-.btn-2:focus, .btn-2:active {
-  background: #F7A710; }
+.form-btn-1, .btn-2 {
+  border-bottom: solid 2px #4F0001;
+  border-radius: 8px;
+  text-transform: uppercase;
+  text-shadow: 1px 1px #FF9826;
+  color: black;
+  font-family: 'Love Ya Like A Sister', serif;
+  font-size: 18px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f2861a), color-stop(99%, #c46200)) !important;
+  background: -webkit-linear-gradient(top, #f2861a 0%, #c46200 99%) !important;
+  background: linear-gradient(to bottom, #f2861a 0%, #c46200 99%) !important; }
 
 .btn-3 {
+  color: #F2F2F2;
   font-size: 0.875em;
-  background: #e5e5e5; }
+  background: #4D0503; }
 
 .btn-3:hover {
-  background: #e5e5e5; }
+  background: #240503; }
 
 .btn-3:focus, .btn-3:active {
-  background: #e5e5e5; }
+  background: #240503; }
 
 /* ==========================================================================
    =ADJECTIVES

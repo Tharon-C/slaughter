@@ -1,21 +1,28 @@
-$font-1:'Open Sans', sans-serif;
+$font-1:'Love Ya Like A Sister', serif;
+$font-2:'Permanent Marker', serif;
 $grey-1: white;
 $grey-2: #F2F2F2;
 $grey-3: rgb(229, 229, 229);
 $grey-4:lightgrey;
-$color-1:#8DABE7;
-$color-2:#026596;
-$color-3:rgb(229, 229, 229);
-$color-4:#F7A710;
-$color-5:#9370E9;
-$color-6:#DDD5F8;
+$grey-5:#383838;
+$color-1:#A10003;
+$color-2:#E57100;
+$color-3:#43B400;
+$color-4:linear-gradient(to bottom, #ad0002 1%,#6d0001 100%);
+$color-5:linear-gradient(to bottom, #f2861a 0%,#c46200 99%);
+$color-6:#7A00BD;
 $shadow-1:0 1px 2px rgba(0, 0, 0, 0.21);
 
-
+a {color:$color-1;}
+a:hover {color:$color-6;}
+p {
+  font-size:22px;
+}
 
 
 html {
-  color:white;
+  font-family: "Times New Roman", Times, serif;
+  color:$grey-4;
   postition:relative;
   background:url('../img/calendar-slide1.jpg') no-repeat 60% center fixed;
   background-position:cover;
@@ -29,7 +36,7 @@ html {
   float:left;
   width: 80%;
   max-width:1000px;
-  padding:100px 50px ;
+  padding:50px 50px ;
   @media (max-width: 70em) {
     padding:20px;
     margin-left:200px;
@@ -60,17 +67,27 @@ header
   z-index:10;
   width:20%;
   min-width:200px;
-  background:$color-1;
+  background:url('../img/side_menu_bg.jpg') ;
+  background-size:cover;
   position:fixed;
   top:0;
   bottom:0;
 }
 
+.mobile-header {
+  background:url('../img/side_menu_bg.jpg');
+  background-size:cover;
+}
+
+.mobile-wdgt {
+  padding:20px;
+}
+
 /* business information across the top of header */
 
 .business-info {
-  background:$color-2;
-    padding: 5px 10px;
+    padding-top: 20px;
+    padding-left: 20px;
       a {
         color: $grey-4;
     }
@@ -94,10 +111,10 @@ logo
 ================================================================= */
 
 .logo {
-  width:150px;
+  width:100%;
   display: block;
   position: relative;
-  padding:10px;
+  margin-bottom:20px;
   a:hover {
     color: black !important;
   }
@@ -127,43 +144,45 @@ nav
     li {
       position:relative;
       display:block;
-      margin-left: -4px;
-      border-bottom:solid 1px $grey-1;
+      
       a {
         display:block;
         color: $grey-1;
-        padding: 18px 30px;
+        padding: 10px 30px;
+        font-family:$font-1;
         text-transform: uppercase;
-        font-size: 14px;
+        font-size: 22px;
         position: relative;
       }
     }
     a:hover {
-       background: $color-2;
+       background: black;
     }
     ul.sub-menu {
     display:none;
     a{
       padding:10px;
-      width:300px
+      width:200px
       }
     }
   }
 
 .nav ul li:hover > ul.sub-menu {
-display:block;
-z-index:99;
-position:absolute;
-top:30px;
-margin:0px 0px 0px -16px;
-padding:0px;
-border:1px #808080 solid;
-background-color:#fff;
-width:300px;
+ background:url('../img/side_menu_bg.jpg');
+  background-size:cover;
+display: block;
+z-index: 99;
+position: absolute;
+top: 0px;
+right: -200px;
+padding: 0px;
+background-color: #fff;
+width: 200px;
 }
 
 .current_page_item a {
-color: black;
+color: $color-1 !important;
+background:black;
 }
 
 /*=============================================================
@@ -182,9 +201,10 @@ footer items
 =================================================================== */
 
 .footer-items {
-    background:$color-3;
-    border-top: solid 1px $grey-2;
-    color: rgb(82, 82, 82);
+  padding:10px;
+    background:black;
+    border-bottom: solid 2px #820003;
+    color: $grey-1;
    }
 
 /*=============================================================== 
@@ -196,7 +216,7 @@ footer {
   right:0;
   position:fixed;
   bottom:0;
-  background:$color-2;
+  background:black;
   text-align:center;
   color: $grey-1;
   font-size: 12px;
@@ -248,7 +268,8 @@ footer {
   typography
   =========================================================================== */
 .headline-1 {
-  color:$color-2;
+  color:$color-1;
+  text-transform: uppercase;
   display:block;
   font-family:$font-1;
   font-weight: 700;
@@ -257,17 +278,19 @@ footer {
 
 
 .title-1 {
+  text-transform: uppercase;
   display:block;
-  font-family:$font-1;
+  font-family:$font-2;
   font-weight: 400;
   font-size:42px;
 }
 
 
 .title-2 {
+  text-transform: uppercase;
   display:block;
-  font:$font-1;
-  font-weight:700;
+  font-family:$font-2;
+  font-weight:400;
   font-size:22px;
 }
 
@@ -281,10 +304,12 @@ footer {
 input, textarea {
   /* Use for styling text based form elements, like name, email, password. 
   Button/submit specific styles below, those will override */
+  box-shadow: inset 0px 1px 5px 1px rgba(0, 0, 0, 0.4);
+  
   display: block;
   padding: .5em;
   margin-bottom: .75em;
-  border: .1em solid $grey-4;
+  border: .1em solid $grey-5;
   width: 100%;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -304,10 +329,9 @@ input:focus, textarea:focus {
 
 input[type='button'], input[type='submit'], button, .button {
   border: none;
-  background: transparent;
   line-height: 1;
   cursor: pointer;
-  padding: 1em 1.5em;
+  padding: .8em 1.5em;
   -webkit-transition: all .3s ease;
   -moz-transition: all .3s ease;
   -ms-transition: all .3s ease;
@@ -318,42 +342,55 @@ input[type='button'], input[type='submit'], button, .button {
   margin-bottom: .75rem;
 }
 
-.form-btn-1 {
-   color: $grey-1;
-  background: $color-2 !important;
+.form-btn-1{
+  box-shadow:none;
 }
 
-.btn-1 {
-  color: $grey-1;
+ .btn-1 {
+  border-bottom:solid 2px #4F0001;
+  border-radius:8px;
+  text-transform:uppercase; 
+  text-shadow: 1px 1px #BD0003;
+  color: black;
+  font-family:$font-1;
+  font-size:18px;
   background: $color-2;
 }
-.btn-1:hover {
-  background: $color-2;
+.form-btn-1:hover, .btn-1:hover {
+  color:$color-6;
+  
 }
 .btn-1:focus, .btn-1:active {
-  background: $color-2;
+ 
 }
 
-.btn-2 {
-   color: $grey-1;
-  background: $color-4;
+.form-btn-1, .btn-2 {
+    border-bottom:solid 2px #4F0001;
+  border-radius:8px;
+  text-transform:uppercase; 
+  text-shadow: 1px 1px #FF9826;
+  color: black;
+  font-family:$font-1;
+  font-size:18px;
+  background: $color-5 !important;
 }
 .btn-2:hover {
-  background: $color-4;
+  
 }
 .btn-2:focus, .btn-2:active {
-  background: $color-4;
+  
 }
 
 .btn-3 {
+  color:$grey-2;
   font-size: .875em;
-  background: $grey-3;
+  background: #4D0503;
 }
 .btn-3:hover {
-  background: $grey-3;
+  background: rgba(36, 5, 3, 1);
 }
 .btn-3:focus, .btn-3:active {
-  background: $grey-3;
+  background: rgba(36, 5, 3, 1);
 }
 
 /* ==========================================================================

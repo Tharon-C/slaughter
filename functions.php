@@ -41,6 +41,12 @@ add_shortcode('page_path', function($args) {
 function load_fonts() {
             wp_register_style('open-sans', 'http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,400,600,700');
             wp_enqueue_style( 'open-sans');
+
+             wp_register_style('love-ya-like-a-sister', 'http://fonts.googleapis.com/css?family=Love+Ya+Like+A+Sister');
+            wp_enqueue_style( 'love-ya-like-a-sister');
+
+             wp_register_style('marker', 'http://fonts.googleapis.com/css?family=Permanent+Marker');
+            wp_enqueue_style( 'marker');
       
     wp_register_style('quicksand', 'http://fonts.googleapis.com/css?family=Quicksand:400,700');
             wp_enqueue_style( 'quicksand');
@@ -252,9 +258,9 @@ if (function_exists('register_sidebar'))
 
       // Define Sidebar Sidebar-1
     register_sidebar(array(
-        'name' => __('Sidebar 1', 'Area for Sidebar, feeds posts etc'),
+        'name' => __('Mobile', 'Area for Sidebar, feeds posts etc'),
         'description' => __('Area for Sidebar, feeds posts etc', 'html5blank'),
-        'id' => 'sidebar-1',
+        'id' => 'mobile',
         'before_widget' => '<div id="%1$s" class="%2$s sidebar-1">',
         'after_widget' => '</div>',
         'before_title' => '<h3>',
