@@ -27,7 +27,7 @@ html {
   position:relative;
   background:url('../img/calendar-slide1.jpg') no-repeat 60% center fixed;
   @media (max-width: 45em) {
-  
+  background:black;
   }
 }
 
@@ -52,7 +52,7 @@ html {
 }
 
 .content-int {
-  padding:100px 20px;
+  padding:75px 20px;
   background:rgba(0,0,0,.5)
 }
 
@@ -316,6 +316,14 @@ footer {
   font-size:22px;
 }
 
+.title-3 {
+  text-transform: uppercase;
+  display:block;
+  font-weight:400;
+  font-size:20px;
+  line-height: 1.3em;
+}
+
 /* ==========================================================================
    = User input
    ========================================================================== */
@@ -398,6 +406,7 @@ input[type='button'], input[type='submit'], button, .button {
   color: black;
   font-family:$font-1;
   font-size:18px;
+  font-weight: 600;
   background:url('../img/background-bloody.png'), $color-4;
 }
 .form-btn-1:hover, .btn-1:hover {
@@ -417,6 +426,7 @@ input[type='button'], input[type='submit'], button, .button {
   color: black;
   font-family:$font-1;
   font-size:18px;
+  font-weight: 600;
   background: url('../img/background-bloody.png'), $color-5;
 
 }
@@ -432,6 +442,7 @@ input[type='button'], input[type='submit'], button, .button {
   padding:10px 20px;
   color:black;
   font-size: .875em;
+  font-weight: 600;
   background:url('../img/background-bloody.png'), #C5A967;
 }
 .btn-3:hover {

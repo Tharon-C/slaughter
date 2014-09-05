@@ -12,7 +12,9 @@ html {
   color: #F2F2F2;
   position: relative;
   background: url('../img/calendar-slide1.jpg') no-repeat 60% center fixed; }
-  @media (max-width: 45em) { }
+  @media (max-width: 45em) {
+    html {
+      background: black; } }
 
 .content {
   margin-left: 20%;
@@ -33,7 +35,7 @@ html {
       margin-left: 0; } }
 
 .content-int {
-  padding: 100px 20px;
+  padding: 75px 20px;
   background: rgba(0, 0, 0, 0.5); }
 
 /*======================================================== 
@@ -242,6 +244,13 @@ footer {
   font-weight: 400;
   font-size: 22px; }
 
+.title-3 {
+  text-transform: uppercase;
+  display: block;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.3em; }
+
 /* ==========================================================================
    = User input
    ========================================================================== */
@@ -308,6 +317,7 @@ input[type='button'], input[type='submit'], button, .button {
   color: black;
   font-family: 'Love Ya Like A Sister', serif;
   font-size: 18px;
+  font-weight: 600;
   background: url('../img/background-bloody.png'), -webkit-gradient(linear, left top, left bottom, color-stop(1%, #ad0002), to(#6d0001));
   background: url('../img/background-bloody.png'), -webkit-linear-gradient(top, #ad0002 1%, #6d0001 100%);
   background: url('../img/background-bloody.png'), linear-gradient(to bottom, #ad0002 1%, #6d0001 100%); }
@@ -324,6 +334,7 @@ input[type='button'], input[type='submit'], button, .button {
   color: black;
   font-family: 'Love Ya Like A Sister', serif;
   font-size: 18px;
+  font-weight: 600;
   background: url('../img/background-bloody.png'), -webkit-gradient(linear, left top, left bottom, from(#f2861a), color-stop(99%, #c46200));
   background: url('../img/background-bloody.png'), -webkit-linear-gradient(top, #f2861a 0%, #c46200 99%);
   background: url('../img/background-bloody.png'), linear-gradient(to bottom, #f2861a 0%, #c46200 99%); }
@@ -336,6 +347,7 @@ input[type='button'], input[type='submit'], button, .button {
   padding: 10px 20px;
   color: black;
   font-size: 0.875em;
+  font-weight: 600;
   background: url('../img/background-bloody.png'), #C5A967; }
 
 .btn-3:hover {
