@@ -35,7 +35,7 @@ input {width: 100%;padding: 5px;margin:5px 0;border: solid 1px #E0E0E0;    backg
 
 textarea {overflow: auto;vertical-align: top;width: 100%;padding: 10px;margin: 5px 0;border: solid 1px #E0E0E0;height: 84px;      background: rgb(255, 255, 255);}
 
-p {margin: 10px 0;}
+p {margin: 0 0 10px;}
 
 .fa {padding-right:5px}
 

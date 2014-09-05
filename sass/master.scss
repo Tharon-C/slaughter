@@ -21,9 +21,10 @@ a:hover {color:$color-6;}
 }
 
 b, strong {
-  font-size:1.2em;
+  font-size:1.05em;
   font-weight: 800;
 }
+
 
 html {
   font-family: "Times New Roman", Times, serif;
@@ -321,10 +322,10 @@ footer {
 }
 
 .title-3 {
-  text-transform: uppercase;
+  margin-bottom:5px;
   display:block;
-  font-weight:400;
-  font-size:20px;
+  font-weight:800;
+  font-size:22px;
   line-height: 1.3em;
 }
 
