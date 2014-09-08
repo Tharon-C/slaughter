@@ -48,8 +48,8 @@ function load_fonts() {
              wp_register_style('marker', 'http://fonts.googleapis.com/css?family=Permanent+Marker');
             wp_enqueue_style( 'marker');
       
-    wp_register_style('quicksand', 'http://fonts.googleapis.com/css?family=Quicksand:400,700');
-            wp_enqueue_style( 'quicksand');
+    wp_register_style('ubuntu', 'http://fonts.googleapis.com/css?family=Ubuntu');
+            wp_enqueue_style( 'ubuntu');
     
      wp_register_style('font-awsome', '//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css');
             wp_enqueue_style( 'font-awsome');

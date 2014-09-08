@@ -1,5 +1,6 @@
 $font-1:'Love Ya Like A Sister', serif;
 $font-2:'Permanent Marker', serif;
+$font-3:'Ubuntu', san-serif;
 $grey-1: white;
 $grey-2: #F2F2F2;
 $grey-3: rgb(229, 229, 229);
@@ -27,7 +28,7 @@ b, strong {
 
 
 html {
-  font-family: "Times New Roman", Times, serif;
+  font-family:$font-3;
   color:$grey-2;
   position:relative;
   background:url('../img/calendar-slide1.jpg') no-repeat 60% center fixed;
@@ -42,6 +43,28 @@ html {
   width: 80%;
   max-width:1000px;
   padding:0px 50px ;
+  @media (max-width: 70em) {
+    padding:0 20px;
+    margin-left:200px;
+    width:800px;
+  }
+  @media (max-width: 45em) {
+    float:none;
+    width:100%;
+    padding:0;
+    margin-left:0;
+  }
+
+}
+
+.gallery-content {
+  margin-left:20%;
+  float:left;
+  width: 80%;
+  .content-int {
+  padding:75px 20px;
+  background:rgba(0,0,0,.9)
+}
   @media (max-width: 70em) {
     padding:0 20px;
     margin-left:200px;
@@ -308,6 +331,7 @@ footer {
   font-family:$font-1;
   font-weight: 700;
   font-size:53px;
+  margin-bottom:15px;
 }
 
 
@@ -395,7 +419,7 @@ input[type='button'], input[type='submit'], button, .button {
   border: none;
   line-height: 1;
   cursor: pointer;
-  padding: .8em 1.5em;
+  padding: 20px 30px;
   -webkit-transition: all .3s ease;
   -moz-transition: all .3s ease;
   -ms-transition: all .3s ease;
@@ -410,7 +434,7 @@ input[type='button'], input[type='submit'], button, .button {
   box-shadow:none;
 }
 
- .btn-1 {
+  input[type='submit'], .btn-1 {
   padding:10px 20px;
   border-bottom:solid 2px #4F0001;
   border-radius:8px;
@@ -422,6 +446,8 @@ input[type='button'], input[type='submit'], button, .button {
   font-weight: 600;
   background:url('../img/background-bloody.png'), $color-4;
 }
+
+
 .form-btn-1:hover, .btn-1:hover {
   color:$color-6;
   

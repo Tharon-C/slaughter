@@ -12,7 +12,7 @@ b, strong {
   font-weight: 800; }
 
 html {
-  font-family: "Times New Roman", Times, serif;
+  font-family: 'Ubuntu', san-serif;
   color: #F2F2F2;
   position: relative;
   background: url('../img/calendar-slide1.jpg') no-repeat 60% center fixed; }
@@ -33,6 +33,25 @@ html {
       width: 800px; } }
   @media (max-width: 45em) {
     .content {
+      float: none;
+      width: 100%;
+      padding: 0;
+      margin-left: 0; } }
+
+.gallery-content {
+  margin-left: 20%;
+  float: left;
+  width: 80%; }
+  .gallery-content .content-int {
+    padding: 75px 20px;
+    background: rgba(0, 0, 0, 0.9); }
+  @media (max-width: 70em) {
+    .gallery-content {
+      padding: 0 20px;
+      margin-left: 200px;
+      width: 800px; } }
+  @media (max-width: 45em) {
+    .gallery-content {
       float: none;
       width: 100%;
       padding: 0;
@@ -236,7 +255,8 @@ footer {
   display: block;
   font-family: 'Love Ya Like A Sister', serif;
   font-weight: 700;
-  font-size: 53px; }
+  font-size: 53px;
+  margin-bottom: 15px; }
 
 .title-1 {
   text-transform: uppercase;
@@ -306,7 +326,7 @@ input[type='button'], input[type='submit'], button, .button {
   border: none;
   line-height: 1;
   cursor: pointer;
-  padding: 0.8em 1.5em;
+  padding: 20px 30px;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   display: block;
@@ -317,7 +337,7 @@ input[type='button'], input[type='submit'], button, .button {
   -webkit-box-shadow: none;
           box-shadow: none; }
 
-.btn-1 {
+input[type='submit'], .btn-1 {
   padding: 10px 20px;
   border-bottom: solid 2px #4F0001;
   border-radius: 8px;

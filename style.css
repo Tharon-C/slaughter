@@ -16,7 +16,7 @@
 *:after,
 *:before {-moz-box-sizing:border-box;box-sizing:border-box;-webkit-font-smoothing:antialiased;font-smoothing:antialiased;text-rendering:optimizeLegibility;}
 html {font-size:62.5%;}
-body {font:400 14px 'Times New Roman', 'Times', serif,'Arial';position:relative;}
+body {font:400 14px position:relative;}
 
 /* clear */
 .clear:before,
@@ -86,8 +86,8 @@ img {display:block;vertical-align:bottom;}
 .pad-t-30px {padding-top:30px;}
 .pad-t-40px {padding-top:40px;}
 .pad-t-50px {padding-top:50px;}
-.pad-b-10px {padding-bottom:30px;}
-.pad-b-20px {padding-bottom:30px;}
+.pad-b-10px {padding-bottom:10px;}
+.pad-b-20px {padding-bottom:20px;}
 .pad-b-30px {padding-bottom:30px;}
 .pad-b-40px {padding-bottom:40px;}
 .pad-b-50px {padding-bottom:50px;}

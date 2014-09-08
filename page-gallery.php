@@ -1,4 +1,4 @@
-<?php /* Template Name:default */ get_header(); ?>
+<?php /* Template Name:Gallery */ get_header(); ?>
 <div class="hide show-m-and-below mobile-header">
 						<a href="<?php echo home_url(); ?>">
 							<!-- svg logo - toddmotto.com/mastering-svg-use-for-a-retina-web-fallbacks-with-png-script -->
@@ -14,7 +14,7 @@
             <?php if (have_posts()): while (have_posts()) : the_post(); ?>
 
 			<!-- article -->
-			<article class="content" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+			<article class="gallery-content" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 				<div class="content-int">
 
 				<?php the_content(); ?>
