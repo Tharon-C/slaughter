@@ -156,7 +156,7 @@ nav
         padding: 10px 30px;
         font-family:$font-1;
         text-transform: uppercase;
-        font-size: 22px;
+        font-size: 25px;
         position: relative;
       }
     }
@@ -221,18 +221,25 @@ footer items
 =================================================================== */
 
 .footer-items {
-  padding:10px;
+    padding:10px 0;
     background:black;
     border-bottom: solid 2px #820003;
+    border-top: solid 2px #820003;
     color: $grey-1;
+     @media (max-width: 45em) {
+     display:none;
+    }
    }
 
    .sponsors {
-    width:960px;
-    @media (max-width: 45em) {
-      width:90%;
-      margin:auto;
-    }
+    max-width:1000px;
+    margin:auto;
+   
+   }
+
+
+   .copyright {
+    padding:10px 0;
    }
 
 /*=============================================================== 
@@ -310,6 +317,7 @@ footer {
   font-family:$font-2;
   font-weight: 400;
   font-size:42px;
+  margin-bottom:5px;
 }
 
 
