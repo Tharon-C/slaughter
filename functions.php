@@ -179,10 +179,6 @@ function html5blank_styles()
 
     wp_register_style('master', get_template_directory_uri() . '/css/master.css', array(), '1.0', 'all');
     wp_enqueue_style('master'); // Enqueue it!
-
-    wp_register_style('hack', get_template_directory_uri() . '/css/hack.css', array(), '1.0', 'all');
-    wp_enqueue_style('hack'); // Enqueue it!
-
 }
 
 // Register HTML5 Blank Navigation
