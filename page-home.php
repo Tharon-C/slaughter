@@ -16,8 +16,8 @@
             <?php if (have_posts()): while (have_posts()) : the_post(); ?>
 
 			<!-- article -->
-			<article class="content" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-				<div class="content-home">
+			<article class="content-home" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+				
 			<video autoplay loop id="bgvid">
 				<source src="<?php echo get_template_directory_uri(); ?>/videos/home-bkg-2.webm" type="video/home-bkg.webm"> 
 				<source src="<?php echo get_template_directory_uri(); ?>/video/home-bkg-2.mp4" type="video/mp4">

@@ -55,8 +55,7 @@ html {
   background:black;
   }
 }
-
-.content-home, .content {
+ .content {
   margin-left:20%;
   float:left;
   width: 80%;
@@ -73,7 +72,16 @@ html {
     padding:0;
     margin-left:0;
   }
+}
 
+.content-home {
+  width:80%;
+  float:right;
+padding:10% 0 ;
+}
+
+.content-home .content-int {
+width:100%;
 }
 
 .gallery-content {

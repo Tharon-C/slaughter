@@ -37,23 +37,31 @@ html {
     html {
       background: black; } }
 
-.content-home, .content {
+.content {
   margin-left: 20%;
   float: left;
   width: 80%;
   max-width: 1000px;
   padding: 0px 50px; }
   @media (max-width: 70em) {
-    .content-home, .content {
+    .content {
       padding: 0 20px;
       margin-left: 200px;
       width: 800px; } }
   @media (max-width: 45em) {
-    .content-home, .content {
+    .content {
       float: none;
       width: 100%;
       padding: 0;
       margin-left: 0; } }
+
+.content-home {
+  width: 80%;
+  float: right;
+  padding: 10% 0; }
+
+.content-home .content-int {
+  width: 100%; }
 
 .gallery-content {
   margin-left: 20%;
