@@ -11,6 +11,9 @@ video {
   width: auto;
   height: auto;
   z-index: -100; }
+  @media (max-width: 45em) {
+    video {
+      display: none; } }
 
 a {
   color: #C00509; }
