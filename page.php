@@ -4,9 +4,7 @@
 							<!-- svg logo - toddmotto.com/mastering-svg-use-for-a-retina-web-fallbacks-with-png-script -->
 							<img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="Logo" class="flex logo-img">
 						</a>
-						<div class="mobile-wdgt">
-							<?php dynamic_sidebar('mobile'); ?>
-						</div>
+						
                     </div>
 	<main role="main">
 		<!-- section -->

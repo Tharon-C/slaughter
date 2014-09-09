@@ -19,7 +19,7 @@
 			<article class="content" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 				<div class="content-home">
 			<video autoplay loop id="bgvid">
-				<!--<source src="<?php echo get_template_directory_uri(); ?>/videos/home-bkg.webm" type="video/home-bkg.webm"> -->
+				<source src="<?php echo get_template_directory_uri(); ?>/videos/home-bkg-2.webm" type="video/home-bkg.webm"> 
 				<source src="<?php echo get_template_directory_uri(); ?>/video/home-bkg-2.mp4" type="video/mp4">
 			</video>
 				<?php the_content(); ?>
