@@ -199,9 +199,10 @@ nav
       display:block;
       
       a {
+        line-height: 1em;
         display:block;
         color: $grey-1;
-        padding: 10px 30px;
+        padding: 6px 30px;
         font-family:$font-1;
         text-transform: uppercase;
         font-size: 25px;
@@ -464,11 +465,11 @@ input[type='button'], input[type='submit'], button, .button {
   border-bottom:solid 2px #4F0001;
   border-radius:8px;
   text-transform:uppercase; 
-  text-shadow: 1px 1px #BD0003;
+  text-shadow: 1px 1px black;
   color: white;
   font-family:$font-1;
   font-size:18px;
-  font-weight: 600;
+  font-weight: 400;
   background:url('../img/background-bloody.png'), $color-4;
 }
 
@@ -486,7 +487,7 @@ input[type='button'], input[type='submit'], button, .button {
   border-bottom:solid 2px #4F0001;
   border-radius:8px;
   text-transform:uppercase; 
-  text-shadow: 1px 1px #FF9826;
+  text-shadow: 1px 1px black;
   color: black;
   font-family:$font-1;
   font-size:18px;
