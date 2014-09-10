@@ -50,7 +50,7 @@ html {
   font-family:$font-3;
   color:$grey-2;
   position:relative;
-  background:url('../img/calendar-slide1.jpg') no-repeat 60% center fixed;
+  background:black;
   @media (max-width: 45em) {
   background:black;
   }
@@ -107,8 +107,8 @@ width:100%;
 }
 
 .content-int {
-  padding:75px 20px;
-  background:rgba(0,0,0,.5)
+  padding:75px 20px 150px;
+  background:rgba(0,0,0,.8)
 }
 
 

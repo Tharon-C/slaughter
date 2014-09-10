@@ -32,7 +32,7 @@ html {
   font-family: 'Ubuntu', san-serif;
   color: #F2F2F2;
   position: relative;
-  background: url('../img/calendar-slide1.jpg') no-repeat 60% center fixed; }
+  background: black; }
   @media (max-width: 45em) {
     html {
       background: black; } }
@@ -83,8 +83,8 @@ html {
       margin-left: 0; } }
 
 .content-int {
-  padding: 75px 20px;
-  background: rgba(0, 0, 0, 0.5); }
+  padding: 75px 20px 150px;
+  background: rgba(0, 0, 0, 0.8); }
 
 /*======================================================== 
 header 
