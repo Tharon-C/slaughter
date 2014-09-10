@@ -1,3 +1,6 @@
+a.fwb_fromthis img {
+  display: none; }
+
 body {
   margin: 0;
   background: transparent; }
@@ -84,7 +87,7 @@ html {
 
 .content-int {
   padding: 75px 20px 150px;
-  background: rgba(0, 0, 0, 0.8); }
+  background: rgba(0, 0, 0, 0.6); }
 
 /*======================================================== 
 header 
@@ -152,7 +155,7 @@ nav
       display: block;
       color: white;
       padding: 10px 30px;
-      font-family: 'Love Ya Like A Sister', serif;
+      font-family: 'Metal Mania', serif;
       text-transform: uppercase;
       font-size: 25px;
       position: relative; }
@@ -276,7 +279,7 @@ footer {
   color: #C00509;
   text-transform: uppercase;
   display: block;
-  font-family: 'Love Ya Like A Sister', serif;
+  font-family: 'Metal Mania', serif;
   font-weight: 700;
   font-size: 53px;
   margin-bottom: 15px; }
@@ -367,7 +370,7 @@ input[type='submit'], .btn-1 {
   text-transform: uppercase;
   text-shadow: 1px 1px #BD0003;
   color: white;
-  font-family: 'Love Ya Like A Sister', serif;
+  font-family: 'Metal Mania', serif;
   font-size: 18px;
   font-weight: 600;
   background: url('../img/background-bloody.png'), -webkit-gradient(linear, left top, left bottom, color-stop(1%, #ad0002), to(#6d0001));
@@ -384,7 +387,7 @@ input[type='submit'], .btn-1 {
   text-transform: uppercase;
   text-shadow: 1px 1px #FF9826;
   color: black;
-  font-family: 'Love Ya Like A Sister', serif;
+  font-family: 'Metal Mania', serif;
   font-size: 18px;
   font-weight: 600;
   background: url('../img/background-bloody.png'), -webkit-gradient(linear, left top, left bottom, from(#f2861a), color-stop(99%, #c46200));

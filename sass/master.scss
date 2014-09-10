@@ -1,4 +1,4 @@
-$font-1:'Love Ya Like A Sister', serif;
+$font-1:'Metal Mania', serif;
 $font-2:'Permanent Marker', serif;
 $font-3:'Ubuntu', san-serif;
 $grey-1: white;
@@ -14,6 +14,11 @@ $color-5:linear-gradient(to bottom, #f2861a 0%,#c46200 99%);
 $color-6:#7A02D8;
 $color-7:linear-gradient(to bottom, #3d0000 50%,#931302 100%);
 $shadow-1:0 1px 2px rgba(0, 0, 0, 0.21);
+
+a.fwb_fromthis img {
+  display:none;
+}
+
 
 body {
   margin: 0;
@@ -107,7 +112,7 @@ width:100%;
 
 .content-int {
   padding:75px 20px 150px;
-  background:rgba(0,0,0,.8);
+  background:rgba(0,0,0,.6);
 }
 
 

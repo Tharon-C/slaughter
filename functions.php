@@ -42,8 +42,10 @@ function load_fonts() {
             wp_register_style('open-sans', 'http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,400,600,700');
             wp_enqueue_style( 'open-sans');
 
-             wp_register_style('love-ya-like-a-sister', 'http://fonts.googleapis.com/css?family=Love+Ya+Like+A+Sister');
-            wp_enqueue_style( 'love-ya-like-a-sister');
+             wp_register_style('metal-mania', 'http://fonts.googleapis.com/css?family=Metal+Mania');
+            wp_enqueue_style( 'metal-mania');
+
+
 
              wp_register_style('marker', 'http://fonts.googleapis.com/css?family=Permanent+Marker');
             wp_enqueue_style( 'marker');
