@@ -26,12 +26,11 @@ body {
 }
 video { 
   position: fixed;
-  right: -10%;
+  right: -30%;
   bottom: 0;
-  min-width: 80%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
+  min-width: 20%;
+  min-height: 20%;
+ 
   z-index: -100;
   @media (max-width: 45em) {
   display:none;
@@ -207,6 +206,11 @@ nav
         text-transform: uppercase;
         font-size: 20px;
         position: relative;
+        @media (max-width: 70em) {
+        padding:5px 20px;
+        font-size:14px;
+    
+  }
       }
     }
     a:hover {
@@ -248,20 +252,51 @@ banner
     background-size: cover;
 }
 
+.wdgt-side-t img {
+width:20%;
+}
+
 .wdgt-side-b {
   width:80%;
   position:absolute;
   bottom:0;
+    @media (max-height: 600px) {
+    height: 120px;
+    width:200px;
+  }
+    @media (max-width: 1300px) {
+    height: 180px;
+    width:160px;
+  }
+ 
+   @media (max-width: 70em) {
+    height: 160px;
+    width:150px;
+  }
 }
 
 
 a.buy-tickets {
   position: relative;
   top:70px;
+  @media (max-width: 80em) {
+    top:0px;
+  }
+  @media (max-width: 70em) {
+    top:0px;
+  }
+   @media (max-height: 600px) {
+    top:30px;
+    width:200px;
+  }
+ 
 }
 
 a.buy-tickets:hover {
   top:0;
+   @media (max-height: 600px) {
+    top:30px;
+  }
 }
 
 
@@ -285,9 +320,7 @@ footer items
     margin:auto;
    
    }
-
-
-   .copyright {
+    .copyright {
     padding:10px 0;
    }
 
