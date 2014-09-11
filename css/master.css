@@ -107,8 +107,8 @@ header
 
 /* business information across the top of header */
 .business-info {
-  padding-top: 20px;
-  padding-left: 20px; }
+  padding-top: 10px;
+  padding-left: 10px; }
   .business-info a {
     color: lightgrey; }
   .business-info .top-wdgt-l {
@@ -128,7 +128,7 @@ logo
   width: 100%;
   display: block;
   position: relative;
-  margin-bottom: 20px; }
+  margin-bottom: 10px; }
   .logo a:hover {
     color: black !important; }
 
@@ -139,7 +139,7 @@ logo
 nav 
 ================================================================*/
 .nav {
-  padding: 20px 0;
+  padding: 10px 0;
   display: block;
   z-index: 10; }
   .nav ul {

@@ -138,8 +138,8 @@ header
 /* business information across the top of header */
 
 .business-info {
-    padding-top: 20px;
-    padding-left: 20px;
+    padding-top: 10px;
+    padding-left: 10px;
       a {
         color: $grey-4;
     }
@@ -166,7 +166,7 @@ logo
   width:100%;
   display: block;
   position: relative;
-  margin-bottom:20px;
+  margin-bottom:10px;
   a:hover {
     color: black !important;
   }
@@ -182,7 +182,7 @@ nav
 
 
 .nav {
-  padding:20px 0;
+  padding:10px 0;
     display: block;
     z-index: 10;
 
