@@ -54,7 +54,8 @@ html {
   font-family:$font-3;
   color:$grey-2;
   position:relative;
-  background:black;
+  background:url('../img/calendar-slide2.jpg') center center fixed no-repeat;
+  background-size:cover;
   @media (max-width: 45em) {
   background:black;
   }
