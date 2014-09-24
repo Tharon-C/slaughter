@@ -1,96 +1,109 @@
 a.fwb_fromthis img {
-  display: none; }
-
+  display: none;
+}
 body {
   margin: 0;
-  background: transparent; }
-
+  background: transparent;
+}
 video {
   position: fixed;
   right: 0;
   bottom: 0;
   min-width: 20%;
   min-height: 20%;
-  z-index: -100; }
-  @media (max-width: 45em) {
-    video {
-      display: none; } }
-
+  z-index: -100;
+}
+@media (max-width: 45em) {
+  video {
+    display: none;
+  }
+}
 a {
-  color: #C00509; }
-
+  color: #c00509;
+}
 a:hover {
-  color: #7A02D8; }
-
+  color: #7a02d8;
+}
 .content {
-  font-size: 18px; }
-
+  font-size: 18px;
+}
 b, strong {
   font-size: 1.05em;
-  font-weight: 800; }
-
+  font-weight: 800;
+}
 html {
   font-family: 'Ubuntu', san-serif;
-  color: #F2F2F2;
+  color: #f2f2f2;
   position: relative;
   background: url('../img/calendar-slide2.jpg') center center fixed no-repeat;
-  background-size: cover; }
-  @media (max-width: 45em) {
-    html {
-      background: black; } }
-
+  background-size: cover;
+}
+@media (max-width: 45em) {
+  html {
+    background: black;
+  }
+}
 .content {
   margin-left: 20%;
   float: left;
   width: 80%;
   max-width: 1000px;
-  padding: 0px 50px; }
-  @media (max-width: 70em) {
-    .content {
-      padding: 0 20px;
-      margin-left: 200px;
-      width: 800px; } }
-  @media (max-width: 45em) {
-    .content {
-      float: none;
-      width: 100%;
-      padding: 0;
-      margin-left: 0; } }
-
+  padding: 0px 50px;
+}
+@media (max-width: 70em) {
+  .content {
+    padding: 0 20px;
+    margin-left: 200px;
+    width: 800px;
+  }
+}
+@media (max-width: 45em) {
+  .content {
+    float: none;
+    width: 100%;
+    padding: 0;
+    margin-left: 0;
+  }
+}
 .content-home {
   width: 80%;
   float: right;
-  padding: 10% 0; }
-
+  padding: 10% 0;
+}
 .content-home .content-int {
-  width: 100%; }
-
+  width: 100%;
+}
 .gallery-content {
   margin-left: 20%;
   float: left;
-  width: 80%; }
-  .gallery-content .content-int {
-    padding: 75px 20px;
-    background: rgba(0, 0, 0, 0.9); }
-  @media (max-width: 70em) {
-    .gallery-content {
-      padding: 0 20px;
-      margin-left: 200px;
-      width: 800px; } }
-  @media (max-width: 45em) {
-    .gallery-content {
-      float: none;
-      width: 100%;
-      padding: 0;
-      margin-left: 0; } }
-
+  width: 80%;
+}
+.gallery-content .content-int {
+  padding: 75px 20px;
+  background: rgba(0, 0, 0, .9);
+}
+@media (max-width: 70em) {
+  .gallery-content {
+    padding: 0 20px;
+    margin-left: 200px;
+    width: 800px;
+  }
+}
+@media (max-width: 45em) {
+  .gallery-content {
+    float: none;
+    width: 100%;
+    padding: 0;
+    margin-left: 0;
+  }
+}
 .content-int {
   padding: 75px 20px 150px;
-  background: rgba(0, 0, 0, 0.6); }
-
-/*======================================================== 
+  background: rgba(0, 0, 0, .6);
+  /*======================================================== 
 header 
 ==========================================================*/
+}
 .header {
   z-index: 10;
   width: 20%;
@@ -100,80 +113,90 @@ header
   position: fixed;
   top: 0;
   bottom: 0;
-  -webkit-box-shadow: 3px 5px 8px rgba(0, 0, 0, 0.75);
-          box-shadow: 3px 5px 8px rgba(0, 0, 0, 0.75); }
-
+  box-shadow: 3px 5px 8px rgba(0, 0, 0, 0.75);
+}
 .mobile-wdgt {
-  padding: 20px; }
-
-/* business information across the top of header */
+  padding: 20px;
+  /* business information across the top of header */
+}
 .business-info {
   padding-top: 10px;
-  padding-left: 10px; }
-  .business-info a {
-    color: lightgrey; }
-  .business-info .top-wdgt-l {
-    color: white;
-    float: left; }
-  .business-info .top-wdgt-r {
-    color: lightgrey; }
-  .business-info li {
-    display: inline-block;
-    margin-left: 20px;
-    color: white; }
-
-/* ==============================================================
+  padding-left: 10px;
+  /* ==============================================================
 logo
 ================================================================= */
+}
+.business-info a {
+  color: lightgrey;
+}
+.business-info .top-wdgt-l {
+  color: white;
+  float: left;
+}
+.business-info .top-wdgt-r {
+  color: lightgrey;
+}
+.business-info li {
+  display: inline-block;
+  margin-left: 20px;
+  color: white;
+}
 .logo {
   width: 100%;
   display: block;
   position: relative;
-  margin-bottom: 10px; }
-  .logo a:hover {
-    color: black !important; }
-
+  margin-bottom: 10px;
+}
+.logo a:hover {
+  color: black !important;
+}
 .logo-img {
-  margin: 0; }
-
-/* ============================================================
+  margin: 0;
+  /* ============================================================
 nav 
 ================================================================*/
+}
 .nav {
   padding: 10px 0;
   display: block;
-  z-index: 10; }
-  .nav ul {
-    margin: 0;
-    padding: 0;
-    width: 100%; }
-  .nav li {
-    position: relative;
-    display: block; }
-    .nav li a {
-      line-height: 1em;
-      display: block;
-      color: white;
-      padding: 9px 30px;
-      font-family: 'Metal Mania', serif;
-      text-transform: uppercase;
-      font-size: 20px;
-      position: relative; }
-      @media (max-width: 70em) {
-        .nav li a {
-          padding: 5px 20px;
-          font-size: 14px; } }
-  .nav a:hover {
-    background: black; }
-  .nav ul.sub-menu {
-    display: none; }
-    .nav ul.sub-menu a {
-      padding: 10px;
-      width: 200px; }
-
+  z-index: 10;
+}
+.nav ul {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.nav li {
+  position: relative;
+  display: block;
+}
+.nav li a {
+  line-height: 1em;
+  display: block;
+  color: white;
+  padding: 9px 30px;
+  font-family: 'Metal Mania', serif;
+  text-transform: uppercase;
+  font-size: 20px;
+  position: relative;
+}
+@media (max-width: 70em) {
+  .nav li a {
+    padding: 5px 20px;
+    font-size: 14px;
+  }
+}
+.nav a:hover {
+  background: black;
+}
+.nav ul.sub-menu {
+  display: none;
+}
+.nav ul.sub-menu a {
+  padding: 10px;
+  width: 200px;
+}
 .nav ul li:hover > ul.sub-menu {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #3d0000), to(#931302));
-  background: -webkit-linear-gradient(top, #3d0000 50%, #931302 100%);
   background: linear-gradient(to bottom, #3d0000 50%, #931302 100%);
   display: block;
   z-index: 99;
@@ -181,83 +204,98 @@ nav
   top: 0px;
   right: -200px;
   padding: 0px;
-  width: 200px; }
-
+  width: 200px;
+}
 .current_page_item a {
-  color: #C00509 !important;
-  background: black; }
-
-/*=============================================================
+  color: #c00509 !important;
+  background: black;
+  /*=============================================================
 banner
 ===============================================================*/
+}
 .banner-home {
-  /* height: 420px; */
   background: url('./img/bkg-1.jpg');
-  background-size: cover; }
-
-.wdgt-side-t img {
-  width: 20%; }
-
+  background-size: cover;
+}
+.wdgt-side-t .social {
+  width: 15%;
+}
 .wdgt-side-b {
   width: 80%;
   position: absolute;
-  bottom: 0; }
-  @media (max-height: 600px) {
-    .wdgt-side-b {
-      height: 120px;
-      width: 200px; } }
-  @media (max-width: 1300px) {
-    .wdgt-side-b {
-      height: 180px;
-      width: 160px; } }
-  @media (max-width: 70em) {
-    .wdgt-side-b {
-      height: 160px;
-      width: 150px; } }
-
+  bottom: 0;
+}
+@media (max-height: 600px) {
+  .wdgt-side-b {
+    height: 120px;
+    width: 200px;
+  }
+}
+@media (max-width: 1300px) {
+  .wdgt-side-b {
+    height: 180px;
+    width: 160px;
+  }
+}
+@media (max-width: 70em) {
+  .wdgt-side-b {
+    height: 160px;
+    width: 150px;
+  }
+}
 a.buy-tickets {
   position: relative;
-  top: 70px; }
-  @media (max-width: 80em) {
-    a.buy-tickets {
-      top: 0px; } }
-  @media (max-width: 70em) {
-    a.buy-tickets {
-      top: 0px; } }
-  @media (max-height: 600px) {
-    a.buy-tickets {
-      top: 30px;
-      width: 200px; } }
-
+  top: 70px;
+}
+@media (max-width: 80em) {
+  a.buy-tickets {
+    top: 0px;
+  }
+}
+@media (max-width: 70em) {
+  a.buy-tickets {
+    top: 0px;
+  }
+}
+@media (max-height: 600px) {
+  a.buy-tickets {
+    top: 30px;
+    width: 200px;
+  }
+}
 a.buy-tickets:hover {
-  top: 0; }
-  @media (max-height: 600px) {
-    a.buy-tickets:hover {
-      top: 30px; } }
-
-/* ===============================================================
+  top: 0;
+  /* ===============================================================
 footer items
 =================================================================== */
+}
+@media (max-height: 600px) {
+  a.buy-tickets:hover {
+    top: 30px;
+  }
+}
 .footer-items {
   padding: 10px 0;
   background: black;
   border-bottom: solid 2px #820003;
   border-top: solid 2px #820003;
-  color: white; }
-  @media (max-width: 45em) {
-    .footer-items {
-      display: none; } }
-
+  color: white;
+}
+@media (max-width: 45em) {
+  .footer-items {
+    display: none;
+  }
+}
 .sponsors {
   max-width: 1000px;
-  margin: auto; }
-
+  margin: auto;
+}
 .copyright {
-  padding: 10px 0; }
-
-/*=============================================================== 
+  padding: 10px 0;
+  /*=============================================================== 
 footer 
 ================================================================*/
+}
 footer {
   width: 80%;
   right: 0;
@@ -266,138 +304,140 @@ footer {
   background: black;
   text-align: center;
   color: white;
-  font-size: 12px; }
-  footer a {
-    color: white; }
-  @media (max-width: 45em) {
-    footer {
-      position: relative;
-      width: 100%;
-      padding: 10px 0;
-      margin-left: 0; } }
-
-/* ==========================================================================
+  font-size: 12px;
+  /* ==========================================================================
    =COLOR
    ========================================================================== */
+}
+footer a {
+  color: white;
+}
+@media (max-width: 45em) {
+  footer {
+    position: relative;
+    width: 100%;
+    padding: 10px 0;
+    margin-left: 0;
+  }
+}
 .swatch {
-  height: 5em; }
-
+  height: 5em;
+}
 .color-1 {
-  background: #C00509; }
-
+  background: #c00509;
+}
 .color-2 {
-  background: #E57100; }
-
+  background: #e57100;
+}
 .color-3 {
-  background: #C5A967; }
-
+  background: #c5a967;
+}
 .color-4 {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #ad0002), to(#6d0001));
-  background: -webkit-linear-gradient(top, #ad0002 1%, #6d0001 100%);
-  background: linear-gradient(to bottom, #ad0002 1%, #6d0001 100%); }
-
+  background: linear-gradient(to bottom, #ad0002 1%, #6d0001 100%);
+}
 .color-5 {
-  background: -webkit-gradient(linear, left top, left bottom, from(#f2861a), color-stop(99%, #c46200));
-  background: -webkit-linear-gradient(top, #f2861a 0%, #c46200 99%);
-  background: linear-gradient(to bottom, #f2861a 0%, #c46200 99%); }
-
+  background: linear-gradient(to bottom, #f2861a 0%, #c46200 99%);
+}
 .color-6 {
-  background: #7A02D8; }
-
-/* ===========================================================================
+  background: #7a02d8;
+  /* ===========================================================================
   typography
   =========================================================================== */
+}
 .headline-1 {
-  color: #C00509;
+  color: #c00509;
   text-transform: uppercase;
   display: block;
   font-family: 'Metal Mania', serif;
   font-weight: 700;
   font-size: 53px;
-  margin-bottom: 15px; }
-
+  margin-bottom: 15px;
+}
 .title-1 {
   text-transform: uppercase;
   display: block;
   font-family: 'Permanent Marker', serif;
   font-weight: 400;
   font-size: 42px;
-  margin-bottom: 5px; }
-
+  margin-bottom: 5px;
+}
 .title-2 {
   text-transform: uppercase;
   display: block;
   font-family: 'Permanent Marker', serif;
   font-weight: 400;
-  font-size: 22px; }
-
+  font-size: 22px;
+}
 .title-3 {
   margin-bottom: 5px;
   display: block;
   font-weight: 800;
   font-size: 22px;
-  line-height: 1.3em; }
-
-/* ==========================================================================
+  line-height: 1.3em;
+  /* ==========================================================================
    = User input
    ========================================================================== */
+}
 .sptr-1 {
   background: url('../img/background-bloody.png') white;
   background-position: 30% 60%;
-  background-size: 90%; }
-
+  background-size: 90%;
+}
 .sptr-2 {
   background: url('../img/background-bloody.png') white;
   background-position: 200% 40%;
-  background-size: 50%; }
-
+  background-size: 50%;
+}
 .sptr-3 {
   background: url('../img/background-bloody.png'), white;
   background-position: 0 0;
-  background-size: 100%; }
-
+  background-size: 100%;
+}
 textarea {
   background: url('../img/background-bloody.png'), white;
-  background-size: 100%; }
-
+  background-size: 100%;
+}
 input, textarea {
-  /* Use for styling text based form elements, like name, email, password. 
-  Button/submit specific styles below, those will override */
-  -webkit-box-shadow: inset 0px 1px 5px 1px rgba(0, 0, 0, 0.7);
-          box-shadow: inset 0px 1px 5px 1px rgba(0, 0, 0, 0.7);
+  box-shadow: inset 0px 1px 5px 1px rgba(0, 0, 0, 0.7);
   display: block;
   padding: 0.5em;
   margin-bottom: 0.75em;
   border: 0.1em solid #383838;
   width: 100%;
   -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  resize: none; }
-
+  resize: none;
+}
 input:focus, textarea:focus {
   outline: none;
-  border-color: #C00509; }
-
+  border-color: #c00509;
+}
 input[type='button'], input[type='submit'], button, .button {
   border: none;
   line-height: 1;
   cursor: pointer;
   padding: 20px 30px;
   -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
   display: block;
   margin-bottom: 0.75em;
-  margin-bottom: 0.75rem; }
-
+  margin-bottom: 0.75rem;
+}
 .form-btn-1 {
-  -webkit-box-shadow: none;
-          box-shadow: none; }
-
+  box-shadow: none;
+}
 input[type='submit'], .btn-1 {
   padding: 10px 20px;
-  border-bottom: solid 2px #4F0001;
+  border-bottom: solid 2px #4f0001;
   border-radius: 8px;
   text-transform: uppercase;
   text-shadow: 1px 1px black;
@@ -405,16 +445,14 @@ input[type='submit'], .btn-1 {
   font-family: 'Metal Mania', serif;
   font-size: 18px;
   font-weight: 400;
-  background: url('../img/background-bloody.png'), -webkit-gradient(linear, left top, left bottom, color-stop(1%, #ad0002), to(#6d0001));
-  background: url('../img/background-bloody.png'), -webkit-linear-gradient(top, #ad0002 1%, #6d0001 100%);
-  background: url('../img/background-bloody.png'), linear-gradient(to bottom, #ad0002 1%, #6d0001 100%); }
-
+  background: url('../img/background-bloody.png'), linear-gradient(to bottom, #ad0002 1%, #6d0001 100%);
+}
 .form-btn-1:hover, .btn-1:hover {
-  color: #7A02D8; }
-
+  color: #7a02d8;
+}
 .form-btn-1, .btn-2 {
   padding: 10px 20px;
-  border-bottom: solid 2px #4F0001;
+  border-bottom: solid 2px #4f0001;
   border-radius: 8px;
   text-transform: uppercase;
   text-shadow: 1px 1px black;
@@ -422,50 +460,48 @@ input[type='submit'], .btn-1 {
   font-family: 'Metal Mania', serif;
   font-size: 18px;
   font-weight: 600;
-  background: url('../img/background-bloody.png'), -webkit-gradient(linear, left top, left bottom, from(#f2861a), color-stop(99%, #c46200));
-  background: url('../img/background-bloody.png'), -webkit-linear-gradient(top, #f2861a 0%, #c46200 99%);
-  background: url('../img/background-bloody.png'), linear-gradient(to bottom, #f2861a 0%, #c46200 99%); }
-
+  background: url('../img/background-bloody.png'), linear-gradient(to bottom, #f2861a 0%, #c46200 99%);
+}
 .btn-2:hover {
-  color: #7A02D8; }
-
+  color: #7a02d8;
+}
 .btn-3 {
   border-radius: 3px;
   padding: 10px 20px;
   color: black;
   font-size: 0.875em;
   font-weight: 600;
-  background: url('../img/background-bloody.png'), #C5A967; }
-
+  background: url('../img/background-bloody.png'), #c5a967;
+}
 .btn-3:hover {
-  background: url('../img/background-bloody.png'), #9D8650; }
-
+  background: url('../img/background-bloody.png'), #9d8650;
+}
 .btn-3:focus, .btn-3:active {
-  background: #9D8650; }
-
-/* ==========================================================================
+  background: #9d8650;
+  /* ==========================================================================
    =ADJECTIVES
    ========================================================================== */
+}
 .ws-adjectives div {
   font-size: 1.5em;
-  padding-bottom: 0.25em; }
-
-/* ==========================================================================
+  padding-bottom: 0.25em;
+  /* ==========================================================================
    =COLOPHON
    ========================================================================== */
+}
 .colophon {
   clear: both;
   text-align: center;
   font-size: 0.875em;
   padding: 1.714em 0;
   border-top: thin solid #eee;
-  margin-top: 1.714em; }
-
-/* =========================================================================
+  margin-top: 1.714em;
+  /* =========================================================================
    =objects
    ========================================================================= */
+}
 .img-1 {
   padding: 10px;
   background: #e5e5e5;
-  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.21);
-          box-shadow: 0 1px 2px rgba(0, 0, 0, 0.21); }
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.21);
+}
