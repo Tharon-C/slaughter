@@ -32,7 +32,8 @@
 			<!-- header -->
 			<header class="header clear" role="banner">
                 <div class="business-info section-top clear">  
-                  <?php dynamic_sidebar('side-nav-t'); ?>                             
+                  <?php dynamic_sidebar('side-nav-t'); ?>      
+                                      
                 </div>
 
 					<!-- nav -->

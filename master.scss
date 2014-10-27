@@ -24,12 +24,17 @@ body {
   margin: 0;
   background: transparent; 
 }
-
-.slider-details-container {
-position: absolute;
-top: 20px;
-right: 20px;
-z-index: 800;
+video { 
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 20%;
+  min-height: 20%;
+ 
+  z-index: -100;
+  @media (max-width: 45em) {
+  display:none;
+  }
 }
 
 
@@ -78,20 +83,6 @@ html {
   width:80%;
   float:right;
 padding:10% 0 ;
-}
-
-
-.mute-btn {
-top: 50px;
-right: 100px;
-z-index: 20;
-position: absolute;
-}
-
-#big-video-wrap {
-  @media (max-width:700px) {
-    display: none;
-  }
 }
 
 .content-home .content-int {
@@ -174,7 +165,6 @@ logo
 ================================================================= */
 
 .logo {
-  margin-top:10px;
   width:100%;
   display: block;
   position: relative;
@@ -188,7 +178,7 @@ logo
 .logo-img {
   margin: 0;
    @media (max-height: 600px) {
-  
+    width:60%;
   }
 }
 
@@ -272,20 +262,26 @@ banner
 }
 
 .wdgt-side-t .social {
-width:20%;
+width:15%;
 }
 
 .wdgt-side-b {
   width:80%;
   position:absolute;
   bottom:0;
-    @media (max-height: 700px) {
+    @media (max-height: 600px) {
       position:relative;
-      width:100%;
+    height: 120px;
+    width:200px;
   }
-    @media (max-width: 1120px) {
-    position:relative;
-    width:100%;
+    @media (max-width: 1300px) {
+    height: 180px;
+    width:160px;
+  }
+ 
+   @media (max-width: 70em) {
+    height: 160px;
+    width:150px;
   }
 }
 
@@ -293,23 +289,23 @@ width:20%;
 a.buy-tickets {
   position: relative;
   top:70px;
-  @media (max-width: 1120px) {
-    display: none;
+  @media (max-width: 80em) {
+    top:0px;
   }
-   @media (max-height: 700px) {
-   display: none;
+   @media (max-height: 600px) {
+    top:30px;
+    width:150px;
   }
  
 }
 
 a.buy-tickets-btn {
-  margin:10px auto;
-  display: none;
-  @media (max-width: 1120px) {
-   display:block;
+ display:none;
+  @media (max-width: 80em) {
+   
   }
-   @media (max-height: 700px) {
-   display:block;
+   @media (max-height: 600px) {
+   
   }
 }
 
@@ -340,26 +336,21 @@ footer items
    .sponsors {
     max-width:1000px;
     margin:auto;
-    .sponsor {
-      width:14.28%;
-    }
+   
    }
     .copyright {
       width:80%;
       float:right;
-    padding:10px 50px;
+    padding:10px 0;
    }
 
 /*=============================================================== 
 footer 
 ================================================================*/
 
-
-
 footer {
-  display: block;
+  width:90%;
   right:0;
-  left:200px;
   position:fixed;
   bottom:0;
   background:black;
@@ -376,8 +367,6 @@ footer {
     margin-left:0;
   }
 }
-
-
 
 /* ==========================================================================
    =COLOR

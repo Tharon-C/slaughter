@@ -12,21 +12,15 @@
 		<!-- section -->
 		<section>
 			
-
-            <?php if (have_posts()): while (have_posts()) : the_post(); ?>
-
-			<!-- article -->
+		<button class="btn-1 mute-btn m-hide" type="button" id="mute" >Mute <i class="fa fa-volume-up"></i></button>
+           <?php if (have_posts()): while (have_posts()) : the_post(); ?>			
 			<article class="content-home" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 				
-			<video autoplay loop id="bgvid">
-				<source src="<?php echo get_template_directory_uri(); ?>/videos/home-bkg-3.webm" type="video/home-bkg.webm"> 
-				<source src="<?php echo get_template_directory_uri(); ?>/video/home-bkg-3.mp4" type="video/mp4">
-			</video>
 				<?php the_content(); ?>
-
+				
 				<?php comments_template( '', true ); // Remove if you don't want comments ?>
 
-				<br class="clear">
+				<br class="clear"> 
 
 			</div>
 			</article>
@@ -45,9 +39,50 @@
 			<!-- /article -->
 
 		<?php endif; ?>
-
+ 
 		</section>
 		<!-- /section -->
-	</main>
+<script type="text/javascript">
+	jQuery(function($) {
+    var BV = new $.BigVideo();
+    BV.init();
+    if (Modernizr.touch) {
+		BV.show('<?php echo get_template_directory_uri(); ?>/img/calendar-slide2.jpg');
+	} else {
+    	BV.show('<?php echo get_template_directory_uri(); ?>/video/home-bkg-3.mp4');
+	}
+	BV.getPlayer().loop('true');
+	});
+</script>
 
-<?php get_footer(); ?>
+<script type="text/javascript">
+window.onload = function() {
+
+  	// Video
+ 	var video = document.getElementById("big-video-vid_html5_api");
+
+  	// Buttons
+  	var muteButton = document.getElementById("mute");
+  	// Event listener for the mute button
+	muteButton.addEventListener("click", function() {
+	  	if (video.muted == false) {
+		    // Mute the video
+		    video.muted = true;
+
+		    // Update the button text
+	 	muteButton.innerHTML = "Unmute";
+	 	} else {
+		    // Unmute the video
+		    video.muted = false; 
+
+		    // Update the button text
+		    muteButton.innerHTML = "Mute";
+	  	}
+	});
+ 
+}
+
+</script>
+	</main> 
+
+<?php get_footer(); ?> 
