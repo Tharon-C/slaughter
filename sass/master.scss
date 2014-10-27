@@ -27,6 +27,7 @@ body {
 video { 
   position: fixed;
   right: 0;
+  top:0;
   bottom: 0;
   min-width: 20%;
   min-height: 20%;
@@ -124,6 +125,7 @@ header
   z-index:10;
   width:20%;
   min-width:200px;
+  max-width:250px;
   background:url('../img/side_menu_bg.jpg') ;
   background-size:cover;
   position:fixed;
@@ -164,10 +166,12 @@ logo
 ================================================================= */
 
 .logo {
+  margin-top:10px;
   width:100%;
   display: block;
   position: relative;
   margin-bottom:10px;
+  background:black;
   a:hover {
     color: black !important;
   }
@@ -175,6 +179,9 @@ logo
 
 .logo-img {
   margin: 0;
+   @media (max-height: 600px) {
+  
+  }
 }
 
 /* ============================================================
@@ -183,7 +190,7 @@ nav
 
 
 .nav {
-  padding:10px 0;
+  padding:0;
     display: block;
     z-index: 10;
 
@@ -207,11 +214,14 @@ nav
         text-transform: uppercase;
         font-size: 20px;
         position: relative;
+        @media (max-height: 600px) {
+        padding:5px 20px;
+        font-size:14px;
+      }
         @media (max-width: 70em) {
         padding:5px 20px;
         font-size:14px;
-    
-  }
+      }
       }
     }
     a:hover {
@@ -254,25 +264,20 @@ banner
 }
 
 .wdgt-side-t .social {
-width:15%;
+width:20%;
 }
 
 .wdgt-side-b {
   width:80%;
   position:absolute;
   bottom:0;
-    @media (max-height: 600px) {
-    height: 120px;
-    width:200px;
+    @media (max-height: 700px) {
+      position:relative;
+      width:100%;
   }
-    @media (max-width: 1300px) {
-    height: 180px;
-    width:160px;
-  }
- 
-   @media (max-width: 70em) {
-    height: 160px;
-    width:150px;
+    @media (max-width: 1120px) {
+    position:relative;
+    width:100%;
   }
 }
 
@@ -280,18 +285,26 @@ width:15%;
 a.buy-tickets {
   position: relative;
   top:70px;
-  @media (max-width: 80em) {
-    top:0px;
+  @media (max-width: 1120px) {
+    display: none;
   }
-  @media (max-width: 70em) {
-    top:0px;
-  }
-   @media (max-height: 600px) {
-    top:30px;
-    width:200px;
+   @media (max-height: 700px) {
+   display: none;
   }
  
 }
+
+a.buy-tickets-btn {
+  margin:10px auto;
+  display: none;
+  @media (max-width: 1120px) {
+   display:block;
+  }
+   @media (max-height: 700px) {
+   display:block;
+  }
+}
+
 
 a.buy-tickets:hover {
   top:0;
@@ -319,9 +332,13 @@ footer items
    .sponsors {
     max-width:1000px;
     margin:auto;
-   
+    .sponsor {
+      width:14.28%;
+    }
    }
     .copyright {
+      width:80%;
+      float:right;
     padding:10px 0;
    }
 
@@ -330,14 +347,14 @@ footer
 ================================================================*/
 
 footer {
-  width:80%;
+  width:90%;
   right:0;
   position:fixed;
   bottom:0;
   background:black;
   text-align:center;
   color: $grey-1;
-  font-size: 12px;
+  font-size: 10px;
   a {
     color: $grey-1;
   }
