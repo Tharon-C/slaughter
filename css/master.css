@@ -270,9 +270,12 @@ footer items
     width: 14.28%; }
 
 .copyright {
-  width: 80%;
-  float: right;
-  padding: 10px 50px; }
+  width: 100%;
+  padding: 10px 50px;
+  line-height: 1.3em; }
+  @media (max-width: 45em) {
+    .copyright {
+      padding: 10px 20px; } }
 
 /*=============================================================== 
 footer 
@@ -292,6 +295,7 @@ footer {
   @media (max-width: 45em) {
     footer {
       position: relative;
+      left: 0;
       width: 100%;
       padding: 10px 0;
       margin-left: 0; } }

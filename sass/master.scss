@@ -345,11 +345,14 @@ footer items
     }
    }
     .copyright {
-      width:80%;
-      float:right;
+      width:100%;
     padding:10px 50px;
+    line-height: 1.3em;
+    @media (max-width: 45em) {
+      padding:10px 20px;
+    }
    }
-
+ 
 /*=============================================================== 
 footer 
 ================================================================*/
@@ -371,6 +374,7 @@ footer {
   }
   @media (max-width: 45em) {
     position:relative;
+    left:0;
     width:100%;
     padding:10px 0;
     margin-left:0;
